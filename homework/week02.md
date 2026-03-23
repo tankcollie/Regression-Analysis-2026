@@ -22,6 +22,11 @@
 - [sklearn](https://scikit-learn.org/stable/);
 - [statsmodels](https://www.statsmodels.org/stable/index.html).
 
+## 假设检验与方差分析
+
+— 调用外接库，来做 beta_1 是否为零的假设检验；
+— 与整体模型的方差分析。
+
 ## 写出实验报告
 
 - 在`<your_dir>/docs/`写下实验报告，要求是markdown格式；
