@@ -2,12 +2,7 @@
 
 ## 配置环境
 
-在`student/<your_file>/src/`中，使用
-```
-uv init # 新建环境
-uv add numpy scikit-learn statsmodels
-```
-然后新建`src/week02`文件夹，在里面写本周作业，*无需提交pr*！
+在`student/<your_file>/src/`中，新建`src/week02`文件夹，在里面写本周作业。
 
 ## 生成随机数
 
@@ -27,8 +22,8 @@ uv add numpy scikit-learn statsmodels
 - [sklearn](https://scikit-learn.org/stable/);
 - [statsmodels](https://www.statsmodels.org/stable/index.html).
 
-## (可选）写出实验报告
+## 写出实验报告
 
-- 在`<your_dir>/docs/`写下实验报告；
-- （进阶）在`<your_dir>/src/week02/`下，写出jupyter版本的报告。
+- 在`<your_dir>/docs/`写下实验报告，要求是markdown格式；
+- 要求有简单描述，表格对比，和图像绘制。
 
