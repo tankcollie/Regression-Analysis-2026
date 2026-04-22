@@ -10,14 +10,11 @@ class AnalyticalSolver:
         start_time = time.perf_counter()
         
         try:
-            # 添加偏置项
-            X_with_bias = np.column_stack([np.ones(X.shape[0]), X])
-            
             # 使用数值稳定的求解方法
-            coefficients = np.linalg.solve(X_with_bias.T @ X_with_bias, X_with_bias.T @ y)
+            coefficients = np.linalg.solve(X.T @ X, X.T @ y)
             
             # 计算预测值和MSE
-            y_pred = X_with_bias @ coefficients
+            y_pred = X @ coefficients
             mse = np.mean((y - y_pred) ** 2)
             
             elapsed_time = time.perf_counter() - start_time
@@ -44,5 +41,4 @@ class AnalyticalSolver:
         if not hasattr(self, 'coef_'):
             raise ValueError("请先调用fit方法训练模型")
         
-        X_with_bias = np.column_stack([np.ones(X.shape[0]), X])
-        return X_with_bias @ self.coef_
+        return X @ self.coef_ 
